@@ -628,4 +628,11 @@ CREATE TABLE users (
     role ENUM('admin','petugas') DEFAULT 'operator',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+=====================================================================================
+INSERT INTO users (username, password, role)
+VALUES (
+  'admin',
+  '$2y$10$Q7kN0x3u9G1M0KX6C8yJxO0X8G7bU0mZx8m4G2Z8Y8xkG9zvP3c1a',
+  'admin'
+);
 
